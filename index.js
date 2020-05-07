@@ -12,4 +12,4 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'))
 })
 
-app.listen(8080, () => console.log('App listening on port 8080'))
+app.listen(80, '0.0.0.0', () => console.log('App listening on port 8080'))
